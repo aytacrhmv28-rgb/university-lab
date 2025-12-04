@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 35px;
+}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: white;
+}
+.bebas-neue-regular a {
+  text-decoration: none;
+  color: white;
+}
+.list {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  padding-left: 0;
+}
+.list li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  transition: border-color 0.3s, color 0.3s, transform 0.3s;
+}
+.list li a:hover {
+  border-bottom-color: #c9ff3f;
+  color: #c9ff3f;
+  transform: scale(1.05);
+}
+.featured {
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
+}
+
+.paragraph1 {
+  color: white;
+}
+.work-section {
+  margin-left: 75px;
+  margin-right: 75px;
+  animation: fadeIn 1s ease forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.work-div3 {
+  display: flex;
+  flex: 1;
+  width: 500px;
+  height: 300px;
+  padding: 60px 40px;
+  background-color: rgb(47, 43, 46);
+  border-radius: 20px;
+  
+}
+.paragraph1{
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: white;
+}
+
+.work-div3 img {
+  width: 100%;
+  border-radius: 30px;
+  border: 1px solid black;
+  object-fit: cover;
+  object-position: left;
+  transition: transform 0.5s;
+}
+.work-div3 img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(201, 255, 63, 0.5);
+}
+.githuba-kecid{
+  display: block;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #c9ff3f;
+  font-size: 20px;
+}
+.work-div2 {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+.work-div4 {
+  flex: 1;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  
+}
+table {
+  width: 100%; /* Cədvəlin kontainerin bütün enini tutmasını təmin edir */
+  border-collapse: collapse; /* Cədvəl xətlərini birləşdirir */
+}
+
+tr {
+  border-bottom: 1px solid #333; /* Hər sətrin yuxarısında nazik xətt */
+}
+
+td {
+  padding: 10px 0; /* Hüceyrələrə yuxarı və aşağı boşluq verir */
+}
+
+.label {
+  text-align: left;
+  /* Adətən, cədvəldə birinci sütun olur */
+}
+
+.value {
+  text-align: right; /* Məlumatın sağa hizalanması üçün */
+}

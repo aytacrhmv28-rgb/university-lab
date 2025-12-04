@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 35px;
+}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: white;
+}
+.bebas-neue-regular a {
+  text-decoration: none;
+  color: white;
+}
+.list {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  padding-left: 0;
+}
+.list li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  transition: border-color 0.3s, color 0.3s, transform 0.3s;
+}
+.list li a:hover {
+  border-bottom-color: #c9ff3f;
+  color: #c9ff3f;
+  transform: scale(1.05);
+}
+.about-section {
+  display: flex;
+  margin-left: 75px;
+  margin-right: 75px;
+  margin-top: 75px;
+  animation: fadeIn 1s ease forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.about1 {
+  flex: 1;
+}
+.about2 {
+  flex: 2;
+  line-height: 1.6;
+}
+.about-heading {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
+  color: white;
+}
+.about-paragraph {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
