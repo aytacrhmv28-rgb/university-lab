@@ -162,3 +162,70 @@ textarea:focus {
   transform: scale(1.05);
   box-shadow: 0 5px 15px rgba(201, 255, 63, 0.5);
 }
+
+@media (max-width: 1024px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+
+  .footer {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 35px;
+  }
+
+  .icons a {
+    font-size: 25px;
+  }
+
+  input, textarea {
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    padding: 12px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .contact-section {
+    margin: 20px 15px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .icons {
+    gap: 15px;
+  }
+
+  input, textarea {
+    padding: 10px;
+  }
+
+  .submit-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
