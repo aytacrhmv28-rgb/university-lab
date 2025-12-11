@@ -1,115 +1,151 @@
-/* details.css */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #0d0d0d;
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+}
 
-/* --- LAYİHƏ DETAL SƏHİFƏSİ ÜÇÜN XÜSUSİ STİLLƏR --- */
+a { text-decoration: none; color: inherit; }
 
-.detail-page-content {
-  max-width: 900px; /* Detallı məzmunun daha mərkəzə yığılması */
-  margin: 40px auto; /* Mərkəzə gətirilməsi */
-  padding: 0 30px;
-  animation: fadeIn 1s ease forwards; /* Ümumi work-section stilini saxlayırıq */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.bebas-neue-regular {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px;
+}
+
+.bebas-neue-regular a:hover { color: #c9ff3f; transition: 0.3s; }
+
+.navigation .list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+.navigation .list li a:hover {
+  color: #c9ff3f;
+  transform: scale(1.05);
+}
+
+/* =====================
+   DETAIL SECTION
+===================== */
+.detail-section {
+  margin: 50px 75px;
 }
 
 .back-link {
-  display: inline-block;
-  text-decoration: none;
-  color: #c9ff3f;
-  font-size: 18px;
-  margin-bottom: 30px;
-  transition: color 0.3s;
+  color: #c9ff3f;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 30px;
 }
 
 .back-link:hover {
-  color: white;
+  text-decoration: underline;
 }
 
-.project-title {
-  font-size: 50px;
-  border-bottom: 2px solid #333;
-  padding-bottom: 15px;
-  margin-bottom: 25px;
-  color: white; /* Başlığın rəngini təmin edir */
+.detail-content {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
-.project-description .paragraph1 {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  color: #ccc;
+.left-side {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.project-details-block {
-  margin-top: 40px;
-  padding: 20px;
-  border-left: 5px solid #c9ff3f;
-  background-color: rgb(47, 43, 46);
-  border-radius: 5px;
+.heading {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 48px;
+  color: #c9ff3f;
 }
 
-.tech-head {
-  color: #c9ff3f !important;
-  font-size: 24px;
-  margin-bottom: 15px;
-  font-family: "Bebas Neue", sans-serif; /* Əsas başlıq stilini istifadə edir */
+.paragraph {
+  font-size: 16px;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.project-details-block .tech-head {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .tech-list {
-  list-style: disc;
-  padding-left: 40px; /* List elementlərinin soldan boşluğunu artırır */
-  color: white;
-  line-height: 1.8;
+  list-style: disc inside;
+  margin: 0;
+  padding-left: 0;
+  color: #e0e0e0;
 }
 
 .tech-list li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
-.visual-placeholder {
-  margin-top: 40px;
+/* BUTTONS */
+.buttonclass {
+  margin-top: 20px;
 }
 
-.visual-placeholder img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  border: 1px solid #c9ff3f;
+.btn {
+  padding: 12px 25px;
+  background-color: #c9ff3f;
+  color: black;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
-.detail-github-link {
-  display: block;
-  text-align: center;
-  margin-top: 50px;
-  padding: 12px 25px;
-  border: 2px solid #c9ff3f;
-  border-radius: 5px;
-  text-decoration: none;
-  color: #c9ff3f;
-  font-size: 20px;
-  transition: 0.3s;
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(201,255,63,0.5);
 }
 
-.detail-github-link:hover {
-  background-color: #c9ff3f;
-  color: black;
-  transform: scale(1.02);
+/* RIGHT SIDE IMAGE */
+.right-side {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
 }
 
+.right-side img.photo {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: 0.5s;
+}
 
-/* --- RESPONSIVE DÜZƏLİŞLƏR --- */
+.right-side img.photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(201,255,63,0.4);
+}
 
-@media (max-width: 768px) {
-  .project-title {
-    font-size: 35px;
-  }
-  .project-description .paragraph1 {
-    font-size: 16px;
-  }
-  .tech-head {
-    font-size: 20px;
-  }
-  .detail-page-content {
-    margin: 20px 15px;
-  }
-  .tech-list {
-    padding-left: 20px;
-  }
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .detail-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heading { text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .heading { font-size: 32px; }
+  .paragraph { font-size: 14px; }
 }
